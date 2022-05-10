@@ -13,6 +13,13 @@ ns !! (length ns - 1)
 -- solution2
 last x = head (reverse x) x
 
+---- SIMPLE LIST
+-- create even list
+-- solution1
+evenList = [ i | i <- [1..n], even i]
+-- solution2
+evenList = [ i | i <- [1..n], i `mod` 2 == 0]
+
 -- create cycle list with k-first element(s)
 cycleList = take k (cycle([1..n]))
 
